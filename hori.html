@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/2acd582937.js" crossorigin="anonymous"></script>
+    <style>
+        .pad{
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group form-row pad">
+                <label for="username" class="col-sm-3">username</label>
+                <input type="text" name="username" id="username" class="form-control col-sm-9">
+                <!-- <label class="text-danger">this field is required!!</label> -->
+            </div>
+            <div class="form-group form-row">
+                <label for="password" class="col-sm-3">password</label>
+                <input type="password" name="password" id="password" class="form-control col-sm-9">
+            </div>
+            <div class="form-group form-row">
+                <label for="photo" class="col-sm-3">add image</label>
+                <input type="file" name="photo" id="photo" class="form-control col-sm-9">
+            </div>
+            <div class="form-group form-row">
+                <label for="address" class="col-sm-3">address</label>
+                <textarea name="address" id="address" class="form-control col-sm-9" cols="30" rows="5" required></textarea>
+            </div>
+            <div class="form-group form-row">
+                <label for="country" class="col-sm-3">select country</label>
+            <select name="country" id="country" required class="col-sm-9">
+                <option value="">select country</option>
+                <option value="india">india</option>
+                <option value="pakistan">pakistan</option>
+                <option value="australia">australia</option>
+            </select>
+            </div>
+            <div class="form-group form-row">
+                <label for="gender" class="col-sm-3">choose gender</label>
+                <input type="radio" name="gender" id="male" value="male" checked class="col-sm-1">male
+                <input type="radio" name="gender" id="female" value="female" checked class="col-sm-1">female
+                <!-- <input type="radio" name="gender" id="other" value="other" checked class="col-sm-3">other -->
+            </div>
+            <div class="form-group form-row">
+                <input type="submit" value="login" class="form-control col-sm-9 offset-sm-3 btn btn-warning">
+            </div>
+        </form>
+</body>
+</html>

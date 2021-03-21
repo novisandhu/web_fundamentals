@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1{
+            grid-area: header;
+        }
+        .item2{
+            grid-area: menu;
+        }
+        .item3{
+            grid-area: sidebar;
+        }
+        .item4{
+            grid-area: main_content;
+        }
+        .item5{
+            grid-area: footer;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-areas: 'header header header header header' 'menu menu menu menu menu' 'sidebar main_content main_content main_content main_content' 'footer footer footer footer footer';
+            grid-gap: 5px;
+            padding: 5px;
+            background-color: #b2b3b3;
+        }
+        .grid-container div{
+            padding: 20px 0px;
+            background-color: green;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">header</div>
+        <div class="item2">menu</div>
+        <div class="item3">sidebar
+            <marquee direction="up"
+            scrolldelay="300"
+            onmouseover="this.stop()"
+            onmouseout="ths.start()">
+            <p>news1<br></p>
+            <p>news2<br></p>
+            <p>news3<br></p>
+            <p>news4<br></p>
+
+        </marquee>
+        </div>
+        <div class="item4">main_content</div>
+        <div class="item5">footer</div>
+    </div>
+</body>
+</html>
